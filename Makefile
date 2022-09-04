@@ -13,6 +13,7 @@ default: bootstrap
 bootstrap:
 	@scripts/setup.sh
 	"$(MAKE)" build-xcodeproj
+	"$(MAKE)" needle
 
 .PHONY: build-xcodeproj
 build-xcodeproj:
@@ -20,7 +21,7 @@ build-xcodeproj:
 
 .PHONY: needle
 needle:
-	@needle generate \
+	needle generate \
 		app/DI/NeedleGenerated.swift \
 		app \
 		--header-doc .needle/copyright_header.txt
