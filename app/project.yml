@@ -1,7 +1,0 @@
-targets:
-  XXXSandbox: #change
-    templates:
-      - FeatureSandboxApp
-    dependencies:
-      - target: Core
-      - target: XXX #change
